@@ -11,8 +11,9 @@ const sleep = (time) => {
   
   const doSomething = async () => {
     for (let i = 0; i <= 100; i++) {
-      await sleep(15)
+      await sleep(25)
       numberToChange.innerHTML = x + "%";
+      numberToChange.style.opacity = x / 100;
     myImg.style.filter = `blur(${y}px)`;
       x--;
       y = x /10;
