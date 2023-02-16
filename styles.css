@@ -7,6 +7,8 @@ overflow: hidden;
 }
 
 .container {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
     position: relative;
     text-align: center;
     color: white;
@@ -14,11 +16,11 @@ overflow: hidden;
 
   #myimg {
     display: block;
-    width: 100vw;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     object-fit: cover; 
     filter: blur(10px);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
 
   .centered {
